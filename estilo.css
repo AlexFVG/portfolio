@@ -1,0 +1,173 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(foto/2.jpeg);
+}
+
+header {
+    background-color: rgb(10, 9, 9);
+    padding: 5px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-hamburguer {
+    display: block;
+    cursor: pointer;
+}
+.sobre{
+    margin-left: 15pxpx;
+    background-color: rgba(17, 16, 15, 0.904);
+    padding: 6px;
+}
+.estud{
+    background-color: rgba(17, 16, 15, 0.904);
+    padding: 5px;
+
+}
+
+.nom{
+    color: rgb(237, 184, 236);
+    font-size: 89%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: groove;
+    padding: 5px;
+    
+   
+}
+
+.bar {
+    width: 30px;
+    height: 5px;
+    background-color:  rgb(221, 133, 189);
+    margin: 5px;
+}
+
+.menu {
+    display: block;
+    list-style: none;
+}
+
+.menu li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(208, 177, 177);
+    
+    padding:6px;
+
+}
+
+a:link{
+	color: rgb(93, 33, 85);
+	text-decoration: none;
+}
+
+a:visited{
+	color: rgb(209, 25, 102);
+}
+
+a:hover{
+	text-decoration: underline;
+	color: rgb(173, 31, 126)
+
+}
+
+a:active{
+	background-color: rgb(98, 5, 97);
+}
+
+.coluna{
+    display: grid;
+}
+
+
+
+.menu.active {
+    
+    display: flex;
+}
+
+
+main {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url();
+    color: aliceblue;
+    padding-left: 15px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* fica com responsividade*/
+    /*grid-template-columns: 400px 400px 400px 400px;    fica sem responsividade*/
+    /* grid-template-columns: 2fr 1fr 1fr 1fr ;   não fica bem responsio*/
+}
+
+.im{
+    width: 150px;
+}
+
+
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(200, 114, 168);
+    border-style: dashed;
+    padding: 10px;
+    margin-left: 15px;
+    width: 96%;
+    margin-top: 60px;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu.active {
+       
+        display: flex;
+    }
+
+    .nom{
+        display: flex;
+
+        }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(98%, 1fr));
+    }
+
+    .container {
+        display: inline-block;
+
+    }
+}
