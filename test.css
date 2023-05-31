@@ -1,0 +1,183 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(1.jpeg);
+}
+
+header {
+    background-color: rgb(10, 9, 9);
+    padding: 5px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.menu-hamburguer {
+    display: block;
+    cursor: pointer;
+   
+    
+}
+.sobre{
+    margin-left: 15pxpx;
+    background-color: rgba(17, 16, 15, 0.904);
+    padding: 6px;
+}
+.estud{
+    background-color: rgba(17, 16, 15, 0.904);
+    padding: 20px;
+	font-size: 120%;
+	text-shadow: rgb(255, 0, 212) 1px 1px 1px;
+	color: rgb(223, 217, 221);
+
+}
+
+.nom{
+	display: none;
+    color: rgb(237, 184, 236);
+    font-size: 89%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: groove;
+    padding: 5px;
+    
+   
+}
+
+.bar {
+    width: 30px;
+    height: 5px;
+    background-color:  rgb(221, 133, 189);
+    margin: 5px;
+}
+
+.menu {
+    display: block;
+    list-style-type: none;
+    margin-left: 35%;
+   
+}
+
+.menu li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(208, 177, 177);
+    
+    padding:6px;
+
+}
+
+a:link{
+	color: rgb(93, 33, 85);
+	text-decoration: none;
+}
+
+a:visited{
+	color: rgb(209, 25, 102);
+}
+
+a:hover{
+	text-decoration: underline;
+	color: rgb(173, 31, 126)
+
+}
+
+a:active{
+	background-color: rgb(98, 5, 97);
+}
+
+.foot{
+	padding-left: 43%;
+}
+
+
+
+.menu.active {
+    
+    display: flex;
+}
+
+
+main {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url();
+    color: aliceblue;
+    padding-left: 15px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* fica com responsividade*/
+    /*grid-template-columns: 400px 400px 400px 400px;    fica sem responsividade*/
+    /* grid-template-columns: 2fr 1fr 1fr 1fr ;   não fica bem responsio*/
+}
+
+.im{
+    width: 150px;
+}
+
+
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(31, 19, 27, 0.713);
+    border-style: dashed;
+    padding: 1px;
+    margin-left: 5px;
+    width: 98%;
+    margin-top: 130px;
+    color: rgb(243, 235, 235);
+	text-shadow: rgb(213, 17, 115) 1px 1px 1px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu.active {
+       
+        display: flex;
+    }
+
+    .nom{
+        display: flex;
+
+        }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(98%, 1fr));
+    }
+
+    .container {
+        display: inline-block;
+
+    }
+}
